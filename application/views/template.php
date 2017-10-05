@@ -23,6 +23,11 @@ if (!defined('APPPATH'))
     </head>
     <body>
         <div class="container">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <a class="brand" href="/"><img src="/assets/images/logo.png"/></a>
+                    {menubar} </div>
+            </div>           
             <div id="content">
                 <h1>{pagetitle}</h1>
                 {content}
