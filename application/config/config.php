@@ -1,6 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+$config['menu_choices'] = array(
+    'menudata' => array(
+        array('name' => 'Home', 'link' => ''),
+        array('name' => 'Fleet', 'link' => 'able'),
+        array('name' => 'Flight', 'link' => 'able'),
+        )
+    );
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
