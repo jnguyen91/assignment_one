@@ -4,6 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
  * RESTish service controller that returns model data in JSON format, on demand.
+ *
+ * @author Ian Park
  */
 class Info extends CI_Controller
 {
