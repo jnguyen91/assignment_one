@@ -36,4 +36,10 @@ class Info extends CI_Controller
 		header("Content-type: application/json");
 		echo json_encode($record, JSON_PRETTY_PRINT);
 	}
+
+	public function fleet() {
+		$record = $this->airplanes;
+		header("Content-type: application/json");
+		echo json_encode($record, JSON_PRETTY_PRINT);
+	}
 }
