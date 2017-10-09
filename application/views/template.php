@@ -22,21 +22,15 @@ if (!defined('APPPATH'))
         <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
     </head>
     <body>
-        <div class="container">
+        <div id="container">
             <div class="navbar">
-                <div class="navbar-inner">
-                    
-                    {menubar} </div>
-            </div>           
-            <div id="content">
-                <h1>{pagetitle}</h1>
-                {content}
-            </div>
-            <div id="footer" class="span12">
-                
-            </div>
+                <ul>
+                    <li><a href="/welcome">Home</a></li>
+                    <li><a href="/fleet">Fleet</a></li>
+                    <li><a href="/flight">Flight</a></li>
+                </ul>
+            </div> 
+            {content}
         </div>
-        <script src="/assets/js/jquery-1.11.1.min.js"></script>
-        <script src="/assets/js/bootstrap.min.js"></script>
     </body>
 </html>

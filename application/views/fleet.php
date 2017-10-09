@@ -1,8 +1,23 @@
-<?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+<h1>Airplanes Information</h1>
+<table>
+	<tr>
+		<th>VehicleID</th>
+		<th>Model</th>
+		<th>Seats</th>
+		<th>Reach</th>
+		<th>Cruise</th>
+		<th>Takeoff</th>
+		<th>Hourly</th>
+	</tr>
+    {vehicles}
+	<tr>
+		<td><a href="/fleet/show/{key}">{vehicleID}</a></td>
+		<td>{model}</td>
+		<td>{seats}</td>
+		<td>{reach}</td>
+		<td>{cruise}</td>
+		<td>{takeoff}</td>
+		<td>{hourly}</td>
+	</tr>
+    {/vehicles}
+</table>

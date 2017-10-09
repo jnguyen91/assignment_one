@@ -31,22 +31,9 @@ class Application extends CI_Controller
 	 * Render this page
 	 */
 	function render($template = 'template')
-	{
-
-           // Build the menubar
-            $this->data['menubar'] = $this->parser->parse('_menubar', $this->config->item('menu_choices'), true);
-
-		// Determine the URL this page was requested as
-            $this->data['origin'] = $this->uri->uri_string();
-
-		// Establish the meat of the current page, as the "content" parameter.
-		// Parse the requested content template (passed as the "pagebody" parameter) to do so.
-            $this->data['content'] = $this->parser->parse($this->data['pagebody'], $this->data, true);
-
-		// And then parse the page template, which will pull in and position the
-		// "meat" in its middle.
-            $this->parser->parse('template', $this->data);
-                
+	{               
+        $this->data['content'] = $this->parser->parse($this->data['pagebody'], $this->data, true);
+		$this->parser->parse('template', $this->data);
 
 	}
 
