@@ -27,7 +27,7 @@ if (!defined('APPPATH'))
                 <ul>
                     <li><a href="/welcome">Home</a></li>
                     <li><a href="/fleet">Fleet</a></li>
-                    <li><a href="/flight">Flight</a></li>
+                    <li><a href="/flights">Flight</a></li>
                 </ul>
             </div> 
             {content}
