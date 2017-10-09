@@ -2,9 +2,18 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+
+/**
+ * Fleet controller.
+ *
+ * @author Lenic Zhang
+ */
 class Fleet extends Application
 {
 	
+	/**
+	 * Constructor.
+	 */
 	function __construct()
 	{
 		parent::__construct();
@@ -37,8 +46,10 @@ class Fleet extends Application
 	}
 	
 	/**
-     * Show just one airplane
-     */
+	 * Shows just one airplane.
+	 * 
+	 * @param  int $key the key of an airplane
+	 */
     public function show($key)
     {		
 		// this is the view we want shown
@@ -52,6 +63,8 @@ class Fleet extends Application
 		
 		// pass on the data to present, adding the author record's fields
 		$this->data = array_merge($this->data, (array) $source);
+
+
 
 		$this->render();
     }

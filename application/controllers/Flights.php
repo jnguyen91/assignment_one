@@ -4,6 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
  * Flights controller.
+ *
+ * @author Ian Park
  */
 class Flights extends Application
 {
