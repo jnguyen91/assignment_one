@@ -132,4 +132,5 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array();
+// to add flight page later on use $autoload['model'] = array('airplanes','flight');
+$autoload['model'] = array('airplanes');
