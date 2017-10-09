@@ -16,7 +16,8 @@ class Airports extends CI_Model
 			'region' => '1',
 			'coordinates' => '49\u00b020\u203214\u2033N124\u00b023\u203238\u2033W',
 			'runway' => '1086',
-			'airline' => ''
+			'airline' => '',
+			'type' => 'base'
 		],
 		1 => [
 			'id' => 'YAA',
@@ -25,7 +26,8 @@ class Airports extends CI_Model
 			'region' => '5',
 			'coordinates' => '52\u00b027\u203208\u2033N125\u00b018\u203216\u2033W',
 			'runway' => '1200',
-			'airline' => ''
+			'airline' => '',
+			'type' => 'dest'
 		],
 		2 => [
 			'id' => 'YAL',
@@ -34,7 +36,8 @@ class Airports extends CI_Model
 			'region' => '1',
 			'coordinates' => '50\u00b034\u203256\u2033N126\u00b054\u203257\u2033W',
 			'runway' => '910',
-			'airline' => ''
+			'airline' => '',
+			'type' => 'dest'
 		],
 		3 => [
 			'id' => 'YAZ',
@@ -43,7 +46,8 @@ class Airports extends CI_Model
 			'region' => '1',
 			'coordinates' => '49\u00b004\u203256\u2033N125\u00b046\u203221\u2033W',
 			'runway' => '1524',
-			'airline' => ''
+			'airline' => '',
+			'type' => 'dest'
 		],
 		4 => [
 			'id' => 'YBD',
@@ -52,7 +56,8 @@ class Airports extends CI_Model
 			'region' => '5',
 			'coordinates' => '52\u00b023\u203215\u2033N126\u00b035\u203245\u2033W',
 			'runway' => '1280',
-			'airline' => ''
+			'airline' => '',
+			'type' => 'dest'
 		]
 	];
 
