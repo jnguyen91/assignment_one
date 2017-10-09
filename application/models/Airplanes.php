@@ -1,13 +1,21 @@
 <?php
 
 /**
+
  * Airplanes model. Contains airplanes information.
  *
  * @author Lenic Zhang
+ 
+ * This is a "CMS" model for quotes, but with bogus hard-coded data,
+ * so that we don't have to worry about any database setup.
+ * This would be considered a "mock database" model.
+ *
+
  */
 class Airplanes extends CI_Model
 {
 	var $data = array(
+
 		'1' => array(
 			'vehicleID' => '001',
 			'id' => 'citation',
@@ -49,11 +57,13 @@ class Airplanes extends CI_Model
 	/**
 	 * Constructor.
 	 */
+
 	public function __construct()
 	{
 		parent::__construct();
 
-		// Inject each "record" key into the record itself, for ease of presentation
+
+		// inject each "record" key into the record itself, for ease of presentation
 		foreach ($this->data as $key => $record)
 		{
 			$record['key'] = $key;
@@ -61,22 +71,30 @@ class Airplanes extends CI_Model
 		}
 	}
 
+
 	/**
 	 * Retrieves a single airplane, null if not found.
 	 * 
 	 * @param  int 			$which 	the key of an airplane
 	 * @return array|null        	an airplane, or null if not found
 	 */
+
+	// retrieve a single airplane, null if not found
+
 	public function get($which)
 	{
 		return !isset($this->data[$which]) ? null : $this->data[$which];
 	}
+
 
 	/**
 	 * Retreives all of the airplanes.
 	 * 
 	 * @return array all of the airplanes
 	 */
+
+	// retrieve all of the airplanes
+
 	public function all()
 	{
 		return $this->data;

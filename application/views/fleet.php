@@ -10,6 +10,7 @@
 		<th>Hourly</th>
 	</tr>
     {vehicles}
+
 		<tr>
 			<td><a href="/fleet/show/{key}">{vehicleID}</a></td>
 			<td>{model}</td>
@@ -19,5 +20,6 @@
 			<td>{takeoff}</td>
 			<td>{hourly}</td>
 		</tr>
+
     {/vehicles}
 </table>
