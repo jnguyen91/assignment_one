@@ -1,5 +1,7 @@
 <?php
+
 defined('BASEPATH') OR exit('No direct script access allowed');
+
 /**
  * Welcome controller.
  *
@@ -15,6 +17,7 @@ class Welcome extends Application
     {
         parent::__construct();
     }
+
     /**
 	 * Index Page for this controller.
 	 *
@@ -35,11 +38,13 @@ class Welcome extends Application
 	    $airports = $this->airports->all();
 	    $base = 'No Base Airport';
 	    $destinations = array();
+
 	    foreach ($flights as $flights) {
 	    	if (strcmp($flights['day'], 'Monday') == 0) {
                 $numSchedules++;
             }
 	    }
+
 	    foreach ($airports as $airports) {
 	    	if (strcmp($airports['type'], 'base') == 0) {
                 $base = $airports['airport'];
@@ -47,6 +52,7 @@ class Welcome extends Application
             	array_push($destinations, $airports);
             }
 	    }
+
 		$this->data['pagebody'] = 'welcome_message';
 		$this->data['numAirplanes'] = count($airplanes);
 	    $this->data['numFlights'] = $numSchedules;
