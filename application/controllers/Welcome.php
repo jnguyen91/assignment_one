@@ -39,19 +39,19 @@ class Welcome extends Application
 	    $base = 'No Base Airport';
 	    $destinations = array();
 
-	    foreach ($flights as $flights) {
+	    /*foreach ($flights as $flights) {
 	    	if (strcmp($flights['day'], 'Monday') == 0) {
                 $numSchedules++;
             }
-	    }
+	    }*/
 
-	    foreach ($airports as $airports) {
+	    /*foreach ($airports as $airports) {
 	    	if (strcmp($airports['type'], 'base') == 0) {
                 $base = $airports['airport'];
             } else {
             	array_push($destinations, $airports);
             }
-	    }
+	    }*/
 
 		$this->data['pagebody'] = 'welcome_message';
 		$this->data['numAirplanes'] = count($airplanes);
