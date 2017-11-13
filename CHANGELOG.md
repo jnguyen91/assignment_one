@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 0.0.3 - 2017-11-12
+### Changed
+- Other
+  - Stylised the look of the web app
+
 ## 0.0.2 - 2017-11-12
 ### Added
 - Model
