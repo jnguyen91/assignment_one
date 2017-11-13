@@ -1,4 +1,4 @@
-<h1>Vehicle Information</h1>
+<h1>Vehicle Information ({role})</h1>
 <p>VehicleID: {vehicleID}</p>
 <p>ID: {id}</p>
 <p>Manufacturer: {manufacturer}</p>

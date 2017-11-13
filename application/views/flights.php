@@ -1,4 +1,4 @@
-<h1>Flights</h1>
+<h1>Flights ({role})</h1>
 <table>
 	<tr>
 		<th>FLIGHT</th>

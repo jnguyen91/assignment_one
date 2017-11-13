@@ -18,22 +18,25 @@ if (!defined('APPPATH'))
         <title>{pagetitle}</title>
         <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
-        <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css" media="screen"/>
-        <!-- <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/> -->
+        <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
         <link rel="stylesheet" type="text/css" href="/assets/css/default.css"/>
     </head>
     <body>
         <div id="container">
             <div class="navbar">
-                <ul>
-                    <li><a href="/welcome">Home</a></li>
-                    <li><a href="/fleet">Fleet</a></li>
-                    <li><a href="/flights">Flight</a></li>
-                </ul>
-            </div> 
-            {content}
+                <div class="navbar-inner">
+                    {menubar}
+                </div>
+            </div>
+            <div id="content">
+                {content}
+            </div>
+            <div id="footer" class="span12">
+                Copyright &copy; 2017, <a href="mailto:bcitipark15@gmail.com">Me</a>.
+            </div>
         </div>
+        <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
     </body>
 </html>
