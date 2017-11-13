@@ -1,0 +1,6 @@
+id,departure_airport,departure_time,arrival_airport,arrival_time,day
+Y001,0,10:30,1,19:10,Monday
+Y002,0,11:30,2,15:15,Tuesday
+Y003,1,18:30,2,06:40,Monday
+Y004,1,09:00,3,16:50,Friday
+Y005,3,12:30,4,15:55,Monday
