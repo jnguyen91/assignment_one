@@ -1,0 +1,6 @@
+id,community,airport,region,coordinates,runway,airline,type
+XQU,"Qualicum Beach","Qualicum Beach Airport",1,49\u00b020\u203214\u2033N124\u00b023\u203238\u2033W,1086,,base
+YAA,"Anahim Lake","Anahim Lake Airport",5,52\u00b027\u203208\u2033N125\u00b018\u203216\u2033W,1200,,dest
+YAL,"Alert Bay","Alert Bay Airport",1,50\u00b034\u203256\u2033N126\u00b054\u203257\u2033W,910,,dest
+YAZ,Tofino,"Tofino/Long Beach Airport",1,49\u00b004\u203256\u2033N125\u00b046\u203221\u2033W,1524,,dest
+YBD,"Bella Coola","Bella Coola Airport",5,52\u00b023\u203215\u2033N126\u00b035\u203245\u2033W,1280,,dest
