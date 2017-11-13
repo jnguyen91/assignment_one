@@ -33,7 +33,7 @@ class Welcome extends Application
     public function index()
 	{
 	    $airplanes = $this->airplanes->all();
-	    $flights = $this->flight->all();
+	    $flights = $this->flights->all();
 	    $numSchedules = 0;
 	    $airports = $this->airports->all();
 	    $base = 'No Base Airport';
