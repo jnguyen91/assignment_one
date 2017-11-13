@@ -6,6 +6,19 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 0.0.4 - 2017-11-12
+### Added
+- View
+  - User roles are now selectable from the navigation bar
+  - User roles are indicated along with the page headings
+
+- Controller
+  - Added the Roles controller for the user roles using session
+
+### Removed
+- View
+  - Unused views are deleted
+
 ## 0.0.3 - 2017-11-12
 ### Changed
 - Other
