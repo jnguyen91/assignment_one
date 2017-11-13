@@ -56,19 +56,27 @@ p.footer {
 }
 
 /* Nav */
-ul {
+.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: #333;
 }
 
-li {
+.nav > li {
     float: left;
 }
 
-li a {
+.nav > li:first-child a {
+	color: gold !important;
+	font-size: 1.5em;
+}
+
+.nav > li:first-child a:hover {
+	background-color: initial !important;
+}
+
+.nav > li > a {
     display: block;
     color: white;
     text-align: center;
@@ -76,8 +84,20 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #111;
+.nav > li a:hover {
+    background-color: #111 !important;
     color: white;
     text-decoration: none;
+}
+
+.nav .open > a {
+	background-color: #111 !important;
+}
+
+.nav > li a:focus {
+	background-color: initial !important;
+}
+
+.user-role {
+	float: right !important;
 }

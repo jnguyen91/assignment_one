@@ -1,4 +1,4 @@
-<h2>Welcome!</h2>
+<h4>Welcome! ({role})</h4>
 <div>
 	<div>
 		<p><b>Number of Planes</b></p>
