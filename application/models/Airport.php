@@ -69,7 +69,7 @@ class Airport extends Entity {
 	 */
 	public function setAirport($value) {
 		// alpha_numeric_spaces|max_length[64]
-		if (preg_match('/^[a-zA-Z0-9]{1,64}$/', $value)) {
+		if (preg_match('/^[a-zA-Z\s\d]{1,64}$/', $value)) {
 			$this->airport = $value;
 		}
 
@@ -115,7 +115,7 @@ class Airport extends Entity {
 	 */
 	public function setCoordinates($value) {
 		// alpha_numeric|max_length[64]
-		if (preg_match('/^[a-zA-Z\d]{1,64}$/', $value)) {
+		if (preg_match('/^[a-zA-Z\d\\]{1,64}$/', $value)) {
 			$this->coordinates = $value;
 		}
 
