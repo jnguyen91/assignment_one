@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 0.0.5 - 2017 -11 -12
+### Added
+
+  -Added phpunit testing for all models (Fleet, Plane, Flight).
+  -Minor changes in the Airport and Flight entity classes
+  -Added unit testing for the Airport entity class
+
+
+
 ## 0.0.4 - 2017-11-12
 ### Added
 - View
