@@ -21,12 +21,12 @@ class Flight extends Entity {
 	 */
 	public function setId($value) {
 		// alpha_numeric|greater_than[0]|less_than[1000]
-		if (preg_match('/^Y[1-9][0-9]{1,2}$/i', $value)) {
+		if (preg_match('/^Y[0-9]{1,3}$/i', $value)) {
 			$letter = strtoupper(substr($value, 0, 1));
 			$number = intval(substr($value, 1));
 
 			if ($number != 0) {
-				$number = sprintf('%03d', $value);
+				$number = sprintf('%03d', $number);
 			}
 
 			$this->id = $letter . $number;
@@ -143,10 +143,10 @@ class Flight extends Entity {
 	 */
 	public function setDayOfWeek($value) {
 		// alpha|max_length[9]
-		if (preg_match('/^monday\b|tuesday\b|wednesday\b|thursday\b|friday\b|saturday\b|sunday\b$/i', $value)) {
+		if (preg_match('/^(monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b$/i', $value)) {
 			$this->day = $value;
 		}
-
+		
 		return;
 	}
 
